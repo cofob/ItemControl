@@ -40,7 +40,7 @@ public class InventoryOpen {
                 if(item != null)
                 {
                     for(Enchantment enchantment : item.getEnchantments().keySet()) {
-                        log.info(item.toString());
+//                        log.info(item.toString());
                         int level = item.getEnchantmentLevel(enchantment);
                         int max_level = enchantment.getMaxLevel();
                         boolean is_converted = false;
