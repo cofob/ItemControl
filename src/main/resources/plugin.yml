@@ -1,0 +1,11 @@
+name: ItemControl
+main: ru.cofob.ItemControl.ItemControl
+version: 0.0.1
+depend:
+  - Vault
+api-version: 1.13
+description: Plugin for deleting illegal enchants
+author: cofob
+commands:
+  itemcontrol:
+    usage: /itemcontrol - get version of plugin
