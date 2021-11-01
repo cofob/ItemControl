@@ -19,7 +19,7 @@ public class ItemControl extends JavaPlugin {
     @Override
     public void onEnable() {
 //        defining variables
-        version = "v0.0.1";
+        version = "v0.0.2";
         log.info("§a[ItemControl] §rLoaded §6"+version+"§r!");
         new InventoryOpen(this).register();
     }
