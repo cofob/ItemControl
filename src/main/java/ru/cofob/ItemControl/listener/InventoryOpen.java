@@ -29,7 +29,7 @@ public class InventoryOpen {
 
         public EventsListener(ItemControl plugin) {
             this.log = plugin.getLogger();
-            log.info("§a[ItemControl] §6debug§r: registered InventoryOpenEvent.");
+//            log.info("§a[ItemControl] §6debug§r: registered InventoryOpenEvent.");
         }
 
         @EventHandler
@@ -53,7 +53,7 @@ public class InventoryOpen {
                             }
                             is_converted = true;
                         }
-                        log.info("§a[ItemControl] §6debug§r: name: "+ enchantment.getKey() + ", current level: " + level + ", max level: " + max_level + ", is converted? " + is_converted + ", breaking? " + breaking);
+//                        log.info("§a[ItemControl] §6debug§r: name: "+ enchantment.getKey() + ", current level: " + level + ", max level: " + max_level + ", is converted? " + is_converted + ", breaking? " + breaking);
                     }
                 }
             }
