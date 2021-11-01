@@ -1,5 +1,5 @@
 [![](https://ci.cofob.ru/job/ItemControl/job/Build/badge/icon?style=plastic)](https://ci.cofob.ru/job/ItemControl/job/Build/lastBuild/)
-# ![](https://git.cofob.ru/cofob/ItemControl/raw/branch/master/docs/images/itemcontrol-logo-16.png) ItemControl ![](https://git.cofob.ru/cofob/ItemControl/raw/branch/master/docs/images/itemcontrol-logo-16.png)
+# ![](https://git.cofob.ru/cofob/ItemControl/raw/branch/master/docs/images/itemcontrol-logo-32.png) ItemControl ![](https://git.cofob.ru/cofob/ItemControl/raw/branch/master/docs/images/itemcontrol-logo-32.png)
 
 Control enchants on items.
 
