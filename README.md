@@ -5,7 +5,7 @@ Control enchants on items.
 
 ## Demonstration
 
-<iframe width="560" height="315" sandbox="allow-same-origin allow-scripts allow-popups" title="ItemControl demonstration" src="https://v.lor.sh/videos/embed/b90e379b-a638-4107-a5ee-506b491d90ce" frameborder="0" allowfullscreen></iframe>
+[![](https://v.lor.sh/static/thumbnails/6f0ea575-fb92-40cc-820d-a169218cbb77.jpg)](https://v.lor.sh/videos/watch/b90e379b-a638-4107-a5ee-506b491d90ce)
 
 ## How it works?
 
