@@ -1,34 +1,33 @@
 package ru.cofob.ItemControl;
 
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
+import org.bukkit.Bukkit;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
-import ru.cofob.ItemControl.listener.InventoryOpen;
-
-import java.util.logging.Logger;
 
 
 public class ItemControl extends JavaPlugin {
-    public String version;
-    private final Logger log;
-
-    public ItemControl() {
-        this.log = this.getLogger();
-    }
-
     @Override
     public void onEnable() {
-//        defining variables
-        version = "v0.0.2";
-        log.info("§a[ItemControl] §rLoaded §6"+version+"§r!");
-        new InventoryOpen(this).register();
+        Bukkit.getScheduler().runTaskTimer(this, this::scanAllPlayers, 400L, 400L);
     }
 
-    public boolean onCommand(CommandSender s, Command cmd, String label, String[] args) {
-        if(cmd.getName().equalsIgnoreCase("itemcontrol")) {
-            s.sendMessage("§a[ItemControl] §rversion: §6"+version+"§r!");
-            return true;
+    private void scanAllPlayers() {
+        for (Player player : this.getServer().getOnlinePlayers()) {
+            for (ItemStack item : player.getInventory().getContents()) {
+                if (item != null) {
+                    for (Enchantment enchantment : item.getEnchantments().keySet()) {
+                        int max_level = enchantment.getMaxLevel();
+                        if (item.getEnchantmentLevel(enchantment) > max_level) {
+                            item.removeEnchantment(enchantment);
+                            if (enchantment.canEnchantItem(item)) {
+                                item.addEnchantment(enchantment, max_level);
+                            }
+                        }
+                    }
+                }
+            }
         }
-        return false;
     }
 }
