@@ -1,4 +1,4 @@
-# ![](https://git.cofob.ru/cofob/ItemControl/raw/branch/master/docs/images/itemcontrol-logo-32.png) ItemControl ![](https://git.cofob.ru/cofob/ItemControl/raw/branch/master/docs/images/itemcontrol-logo-32.png)
+# ![](/docs/images/itemcontrol-logo-32.png) ItemControl ![](/docs/images/itemcontrol-logo-32.png)
 
 Control enchants on items.
 
