@@ -1,3 +1,5 @@
+> **Archival notice:** This repository is archived and no longer maintained.
+
 # ![](/docs/images/itemcontrol-logo-32.png) ItemControl ![](/docs/images/itemcontrol-logo-32.png)
 
 Control enchants on items.
